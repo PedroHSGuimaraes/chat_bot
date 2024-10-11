@@ -19,7 +19,7 @@ header {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
@@ -30,6 +30,8 @@ nav .logo {
   font-size: 1.5rem;
   color: #fff;
   font-weight: bold;
+  position: relative;
+  right: 360px;
 }
 
 nav ul {
@@ -66,21 +68,6 @@ nav ul li a:hover {
 #hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-}
-
-.cta-button {
-  background-color: #fff;
-  color: #f26722;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 1rem;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #d1d1d1;
 }
 
 main {
@@ -135,4 +122,5 @@ footer {
   padding: 2rem 0;
   background-color: #333;
   color: #fff;
+  margin-top: 2.7rem;
 }
