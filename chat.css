@@ -1,0 +1,76 @@
+:root {
+  --chat--color-primary: #f26722;
+  --chat--color-primary-shade-50: #e65c19;
+  --chat--color-primary-shade-100: #d95112;
+  --chat--color-secondary: #fff;
+  --chat--color-light: #f4f4f9;
+  --chat--color-medium: #d3d3d3;
+  --chat--color-dark: #333;
+  --chat--color-disabled: #777980;
+  --chat--color-typing: #404040;
+
+  --chat--spacing: 1rem;
+  --chat--border-radius: 18px;
+  --chat--transition-duration: 0.2s;
+
+  --chat--window--width: 400px;
+  --chat--window--height: 600px;
+
+  --chat--header--padding: var(--chat--spacing);
+  --chat--header--background: var(--chat--color-primary);
+  --chat--header--color: var(--chat--color-secondary);
+
+  --chat--textarea--height: 50px;
+
+  --chat--message--font-size: 0.7rem; /* Reduzido de 1rem para 0.875rem */
+  --chat--message--padding: calc(var(--chat--spacing) / 2);
+  --chat--message--margin: 0; /* Added missing variable */
+  --chat--message--bot--background: #c2abab;
+  --chat--message--bot--color: var(--chat--color-dark);
+  --chat--message--user--background: var(--chat--color-primary);
+  --chat--message--user--color: var(--chat--color-secondary);
+
+  --chat--toggle--background: var(--chat--color-primary);
+  --chat--toggle--hover--background: var(--chat--color-primary-shade-50);
+  --chat--toggle--active--background: var(--chat--color-primary-shade-100);
+  --chat--toggle--color: var(--chat--color-secondary);
+  --chat--toggle--size: 56px;
+}
+
+.chat-window {
+  box-shadow: none;
+}
+
+.chat-message {
+  box-shadow: none;
+  font-size: var(--chat--message--font-size);
+}
+
+.chat-toggle {
+  transition: transform var(--chat--transition-duration) ease-in-out,
+    box-shadow var(--chat--transition-duration) ease-in-out;
+}
+
+.chat-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chat-toggle:active {
+  transform: scale(0.95);
+}
+.chat-layout.chat-wrapper {
+  background-color: transparent;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.chat-window {
+  box-shadow: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#n8n-chat main {
+  padding: 0;
+}
